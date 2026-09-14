@@ -33,6 +33,10 @@ Export the relevant conversation context **plus relevant information from availa
 
 If the receiving AI needs the original artifact, the original file should still be attached alongside the generated export.
 
+Every export should be delivered in two forms:
+1. a copy-ready command box/code block
+2. a downloadable Markdown file containing the same export
+
 ## What EEC captures
 
 - Current state
