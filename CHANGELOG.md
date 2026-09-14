@@ -14,4 +14,5 @@ All notable changes to EEC are documented here.
 - Accuracy and anti-hallucination rules.
 - AI-agnostic portability guidance.
 - Basic usage examples.
+- Dual output requirement: copy-ready command box plus downloadable export file.
 - MIT license.
