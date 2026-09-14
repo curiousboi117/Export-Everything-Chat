@@ -13,6 +13,23 @@ EEC has two modes:
 
 The output should be optimized for another AI to continue the work immediately, not written as a casual conversation recap.
 
+## Required Output Formats
+
+Every successful `EEC` or `EECwF` export must be provided in **two forms**:
+
+1. **Command box** — Put the complete AI-ready export inside a single plain-text/code block so the user can copy it directly into another AI.
+2. **Downloadable file** — Also create a downloadable Markdown file containing the same complete export.
+
+The command-box version and downloadable file must contain the same substantive information. Do not provide only one of them.
+
+Use a clear filename such as:
+
+- `EEC_export.md`
+- `EECwF_export.md`
+
+If the platform supports file creation, generate the downloadable file automatically. If file generation is unavailable, clearly state that limitation rather than pretending a file was created.
+
+
 ## Trigger Rules
 
 ### `EEC`
@@ -248,6 +265,25 @@ If exact code/data is essential and cannot be safely summarized, tell the user t
 8. Do not include irrelevant information.
 9. Do not over-summarize away continuation-critical information.
 10. Avoid repetitive history.
+
+## Final Quality Check
+
+Before returning an EEC/EECwF export, verify:
+
+- Current state is clear.
+- Main objective is clear.
+- Completed work is separated from pending work.
+- Important decisions are preserved.
+- Known bugs/blockers are preserved.
+- Requirements and constraints are preserved.
+- Relevant files are identified.
+- Missing required files are explicitly marked.
+- EECwF includes relevant available file-derived context.
+- No unavailable file contents were invented.
+- The receiving AI can understand the project without reading the original conversation.
+- The complete export is provided in both a copy-ready command box and a downloadable Markdown file.
+- Both versions contain the same substantive information.
+- The export does not contain unnecessary conversational noise.
 
 ## Portability
 
